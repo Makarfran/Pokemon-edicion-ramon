@@ -840,6 +840,18 @@ FunctionCode = DisableTargetUsingSameMoveConsecutively
 Flags = CanProtect,CanMirrorMove
 Description = Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento.
 #-------------------------------
+[CURSEWRITTAIL]
+Name = Cola Maldita
+Type = DARK
+Category = Physical
+Power = 25
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimesPowersUpWithEachHit
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Se mueve acrobaticamente para atacar tres veces seguidas.
+#-------------------------------
 [ETERNABEAM]
 Name = Rayo Infinito
 Type = DRAGON
@@ -6680,6 +6692,19 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = Lanza contra el objetivo asquerosa basura. Puede envenenar al objetivo.
+#-------------------------------
+[ACIDBATTERY]
+Name = Batería Ácida
+Type = POISON
+Category = Special
+Power = 90
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = PoisonOrBurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = Expulsa ácido de batería contra el objetivo. Puede quemar o envenenar.
 #-------------------------------
 [SLUDGEWAVE]
 Name = Onda Tóxica
